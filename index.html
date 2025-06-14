@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>交易剪貼簿分析 – 完整版</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<header>
+  <h1>交易剪貼簿分析</h1>
+  <button id="btn-clip">貼上剪貼簿內容</button>
+  <label class="btn">
+    選擇檔案 <input type="file" id="fileInput" accept=".txt,.TF" hidden>
+  </label>
+</header>
+
+<section id="statsGrid" class="grid"></section>
+<canvas id="equityChart"></canvas>
+
+<table id="tbl" hidden>
+  <thead>
+    <tr><th>建倉</th><th>平倉</th><th>多空</th><th>點數</th><th>盈虧(元)</th><th>持倉K</th></tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
